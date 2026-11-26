@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sadam Muhammad Hakiki | Teknisi Dukungan IT</title>
+<meta name="description" content="Portfolio Sadam Muhammad Hakiki, teknisi dukungan IT di Depok. Lulusan Teknik Komputer dan Jaringan SMK Nasional Depok, siap untuk posisi di bidang IT.">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" hreflang="en" href="en.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script>
+/* restore the saved theme before first paint, otherwise the page flashes white */
+try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='gelap'||t==='dark')document.documentElement.dataset.theme='dark'}catch(e){}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script>document.addEventListener("DOMContentLoaded",function(){document.documentElement.dataset.tw="on"})</script>
+<style type="text/tailwindcss">
+  /* ink is the near-black used for text, rules and the primary button; on-ink is what sits on it */
+  @theme {
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "Space Mono", ui-monospace, Consolas, monospace;
+    --color-page: #FFFFFF;
+    --color-ink: #050505;
+    --color-ink-hover: #1C1C1C;
+    --color-on-ink: #FFFFFF;
+    --color-body: #111827;
+    --color-muted: #4B5563;
+    --color-line: #D4D4D4;
+    --color-surface: #F4F4F4;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-page: #0B0B0B;
+    --color-ink: #F2F2F2;
+    --color-ink-hover: #D9D9D9;
+    --color-on-ink: #050505;
+    --color-body: #E5E7EB;
+    --color-muted: #9CA3AF;
+    --color-line: #2A2A2A;
+    --color-surface: #141414;
+  }
+  /* patterns paint with currentColor, so each icon takes the colour of its parent */
+  @utility px-heavy {
+    background-size: 8px 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='currentColor'/%3E%3Cpath d='M0 0h6v2H0zM0 2h2v2H0zM4 2h2v2H4zM0 4h2v2H0zM4 4h2v2H4zM0 6h2v2H0zM4 6h2v2H4z' fill='%23fff'/%3E%3C/svg%3E");
+  }
+  @utility px-dense {
+    background-size: 8px 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v2H0zm2 0h2v2H2zm4 0h2v2H4zm6 0h2v2H6zM0 2h2v2H0zm2 2h2v2H2zm2 0h2v2H4zm4 0h2v2H6zM0 4h2v2H0zm2 0h2v2H2zm4 0h2v2H4zm6 0h2v2H6zM2 6h2v2H2zm4 0h2v2H4z' fill='currentColor'/%3E%3C/svg%3E");
+  }
+  @utility px-mid {
+    background-size: 8px 8px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v2H0zm4 0h2v2H4zM2 2h2v2H2zm4 2h2v2H4zM0 4h2v2H0zm4 0h2v2H4zM6 4h2v2H6zM2 6h2v2H2zm4 0h2v2H4z' fill='currentColor'/%3E%3C/svg%3E");
+  }
+  /* the band that closes the hero: a 16px tile of stripes, each stripe running the muted to ink gradient */
+  @utility px-ramp {
+    background-size: 16px 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234B5563'/%3E%3Cstop offset='1' stop-color='%23050505'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='16' height='4' fill='url(%23g)'/%3E%3Crect y='6' width='16' height='4' fill='url(%23g)'/%3E%3Crect y='12' width='16' height='2' fill='url(%23g)'/%3E%3C/svg%3E");
+  }
+  :root[data-theme="dark"] .px-ramp {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%239CA3AF'/%3E%3Cstop offset='1' stop-color='%23F2F2F2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='16' height='4' fill='url(%23g)'/%3E%3Crect y='6' width='16' height='4' fill='url(%23g)'/%3E%3Crect y='12' width='16' height='2' fill='url(%23g)'/%3E%3C/svg%3E");
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html{scroll-behavior:auto}
+    .motion{transition:none!important}
+  }
+</style>
+</head>
+<body class="bg-page font-sans text-[16.5px]/[1.65] text-body antialiased [color-scheme:light]">
+
+<a href="#kontak" class="fixed left-2 top-[-3rem] z-20 rounded-lg bg-ink px-3.5 py-2.5 text-on-ink no-underline focus:top-2">Langsung ke kontak</a>
+
+<header class="relative sticky top-0 z-10 border-b border-line bg-page">
+  <div class="mx-auto flex min-h-15 max-w-[1120px] items-center justify-between gap-5 px-[clamp(16px,5vw,40px)]">
+    <a href="#atas" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-xl/none font-semibold tracking-[-.02em] no-underline">
+      <span class="px-mid size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
+      Sadam M. Hakiki <small class="font-mono text-xs font-medium text-muted max-sm:hidden">Portfolio</small>
+    </a>
+    <div class="flex items-center gap-4">
+      <nav aria-label="Navigasi utama" class="max-md:hidden">
+        <ul class="flex gap-[clamp(12px,2.5vw,28px)] font-mono text-[13px] font-medium">
+          <li><a href="#pengalaman" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Pengalaman</a></li>
+          <li class="max-lg:hidden"><a href="#keahlian" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Keahlian</a></li>
+          <li class="max-lg:hidden"><a href="#proyek" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Proyek</a></li>
+          <li><a href="#kontak" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Kontak</a></li>
+        </ul>
+      </nav>
+      <a href="en.html" hreflang="en" lang="en" aria-label="Versi bahasa Inggris" class="border-b-2 border-line py-0.5 font-mono text-xs font-medium no-underline hover:border-ink max-md:hidden">EN</a>
+      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 font-mono text-xs font-medium text-muted" type="button" aria-pressed="false" aria-label="Gelap: mati" title="Gelap: mati">
+        <span class="max-sm:hidden" aria-hidden="true">Terang</span>
+        <span class="relative h-5 w-9 shrink-0 rounded-full border border-ink bg-page" aria-hidden="true">
+          <span class="motion absolute left-0.5 top-0.5 size-3.5 rounded-full bg-ink transition-transform duration-150 group-[&[aria-pressed=true]]:translate-x-4"></span>
+        </span>
+        <span class="max-sm:hidden" aria-hidden="true">Gelap</span>
+      </button>
+      <details class="relative md:hidden">
+        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 font-mono text-xs font-medium [&::-webkit-details-marker]:hidden">Menu</summary>
+        <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 font-mono text-[13px] shadow-sm">
+          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#pengalaman">Pengalaman</a></li>
+          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#keahlian">Keahlian</a></li>
+          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#proyek">Proyek</a></li>
+          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#kontak">Kontak</a></li>
+          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="en.html" hreflang="en" lang="en">English version</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="atas" tabindex="-1" class="focus:outline-none">
+
+  <section class="pb-0 pt-[clamp(36px,6vw,72px)]" aria-labelledby="hero-h">
+    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
+      <p class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs font-medium uppercase tracking-[.05em] text-muted">
+        <span>Depok, Jawa Barat</span><span>Terbuka untuk posisi IT</span><span>Bisa mulai segera</span>
+      </p>
+      <h1 id="hero-h" class="mt-3.5 text-balance font-display text-[clamp(40px,6.6vw,78px)]/none font-semibold tracking-[-.045em]">Sadam Muhammad Hakiki</h1>
+      <p class="mt-2.5 font-display text-[clamp(19px,2.6vw,26px)]/tight font-medium tracking-[-.015em]">Teknisi dukungan IT untuk perangkat kantor dan jaringan lokal.</p>
+      <p class="mt-4.5 max-w-[60ch] text-[clamp(16px,1.9vw,18px)] text-muted">Lulusan Teknik Komputer dan Jaringan dari SMK Nasional Depok. Saya terbiasa menangani pemasangan ulang Windows, gangguan koneksi kantor, printer yang tidak terdeteksi, dan pemasangan perangkat keras. Saya mencari posisi tetap di bidang IT supaya bisa terus menangani masalah teknis sehari-hari sekaligus belajar dari tim yang lebih berpengalaman.</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a class="motion inline-flex items-center gap-2 rounded-[15px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-on-ink no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover" href="mailto:sadamhakiki0@gmail.com?subject=Lamaran%20posisi%20IT">Hubungi lewat surel</a>
+        <a class="motion inline-flex items-center gap-2 rounded-[15px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90" href="tel:+6287883351852">Telepon +62 878 8335 1852</a>
+      </div>
+    </div>
+    <div class="px-ramp mt-[clamp(32px,5vw,56px)] h-[clamp(56px,9vw,104px)]" aria-hidden="true"></div>
+  </section>
+
+  <section id="pengalaman" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)] pt-[clamp(40px,6vw,72px)]" aria-labelledby="pengalaman-h">
+    <div class="mx-auto max-w-[1120px]">
+      <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
+        <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="pengalaman-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Pengalaman kerja</h2>
+        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Tiga tahun menangani perangkat pengguna dan jaringan kantor, dari magang sampai staf dukungan teknis.</p>
+      </div>
+      <ol class="border-t border-ink">
+        <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
+          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2024 &ndash; sekarang</span>
+          <div>
+            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Staf dukungan teknis</h3>
+            <p class="mt-0.5">PT Mitra Teknologi Nusantara <span class="text-muted">&middot; Depok</span></p>
+            <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
+              <li>Menjadi titik kontak pertama untuk keluhan perangkat dari 40 pengguna kantor lewat tiket dan telepon.</li>
+              <li>Memasang ulang Windows dan menyalin data pengguna sebelum pemasangan, dengan pemeriksaan ulang setelah selesai.</li>
+              <li>Mendampingi staf baru saat penyiapan laptop, akun surel, dan akses printer jaringan.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
+          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2023 &ndash; 2024</span>
+          <div>
+            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Teknisi magang</h3>
+            <p class="mt-0.5">CV Data Prima <span class="text-muted">&middot; Jakarta Selatan</span></p>
+            <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
+              <li>Memeriksa dan membersihkan laptop staf yang panas dan berisik, lalu mengganti pasta termal bersama teknisi senior.</li>
+              <li>Memasang SSD dan RAM tambahan, lalu memastikan sistem mendeteksi perangkat baru dengan benar.</li>
+              <li>Membantu pengaturan router dan titik akses untuk ruang kerja berisi 12 komputer.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="keahlian" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)]" aria-labelledby="keahlian-h">
+    <div class="mx-auto max-w-[1120px]">
+      <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
+        <span class="px-mid mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="keahlian-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Keahlian dan pendidikan</h2>
+        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Yang saya kerjakan setiap hari, bukan daftar semua hal yang pernah saya baca.</p>
+      </div>
+      <div class="grid gap-8 md:grid-cols-3 md:gap-[clamp(24px,4vw,48px)]">
+        <div>
+          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Sistem dan perangkat</h3>
+          <ul class="grid list-none gap-2.5 p-0 text-[15px]">
+            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Windows 10 dan 11, pemasangan ulang dan pemulihan</li>
+            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Pemasangan SSD, RAM, dan penggantian pasta termal</li>
+            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Pencadangan data sebelum perbaikan</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Jaringan</h3>
+          <ul class="grid list-none gap-2.5 p-0 text-[15px]">
+            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Pengaturan router, titik akses, dan IP statis</li>
+            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Perbaikan koneksi Wi-Fi yang sering putus</li>
+            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Penyambungan perangkat jaringan dan kabel LAN</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Pendidikan dan sertifikat</h3>
+          <ul class="grid list-none gap-2.5 p-0 text-[15px]">
+            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>SMK Nasional Depok, Teknik Komputer dan Jaringan</li>
+            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Sertifikat perakitan dan perawatan komputer</li>
+            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Sertifikat dasar jaringan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)]" aria-labelledby="proyek-h">
+    <div class="mx-auto max-w-[1120px]">
+      <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
+        <span class="px-heavy mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="proyek-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Dua kasus yang paling sering saya sebut saat wawancara.</h2>
+        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Ditulis singkat: apa masalahnya, apa yang saya lakukan, dan hasilnya.</p>
+      </div>
+      <div class="grid items-start gap-6 lg:grid-cols-[1.1fr_1fr]">
+        <article class="rounded-[15px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
+          <div class="px-heavy h-20 w-full bg-ink" aria-hidden="true"></div>
+          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">Wi-Fi kantor titik akses acak</h3>
+          <p class="mt-2 text-[15px] text-muted">Koneksi di ruang kerja putus setiap jam makan siang karena router lama mengatur ulang IP sendiri.</p>
+          <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
+            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Yang saya lakukan</dt>
+            <dd class="m-0">Menyetel satu perangkat sebagai pembagi IP dengan alamat tetap, lalu mengubah titik akses agar meneruskan koneksi, bukan membagi IP sendiri.</dd>
+            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Hasil</dt>
+            <dd class="m-0">Koneksi stabil selama dua minggu pengamatan, tanpa keluhan putus selama jam sibuk.</dd>
+          </dl>
+        </article>
+        <article class="rounded-[15px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
+          <div class="px-mid h-20 w-full bg-ink" aria-hidden="true"></div>
+          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">Laptop pengguna yang tidak mau menyala</h3>
+          <p class="mt-2 text-[15px] text-muted">Laptop mati setelah pembaruan sistem, padahal di dalamnya ada dokumen yang belum dicadangkan.</p>
+          <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
+            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Yang saya lakukan</dt>
+            <dd class="m-0">Melepas disk, menyalin datanya ke media cadangan, baru memperbaiki bagian pemuatan sistem.</dd>
+            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Hasil</dt>
+            <dd class="m-0">Data utuh, laptop menyala normal di hari yang sama, pengguna melanjutkan pekerjaan tanpa kehilangan berkas.</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="px-[clamp(16px,5vw,40px)] pb-0" aria-labelledby="kontak-h">
+    <div class="mx-auto max-w-[1120px]">
+      <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
+        <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="kontak-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Tertarik mengajak saya bergabung?</h2>
+        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Saya membalas surel di hari kerja. Untuk urusan cepat, telepon langsung lebih baik.</p>
+      </div>
+      <ul class="flex list-none flex-wrap gap-x-8 gap-y-3 p-0">
+        <li><a class="inline-flex items-baseline gap-2.5 border-b-2 border-transparent py-1 text-[clamp(17px,2.2vw,20px)] tracking-[-.01em] no-underline hover:border-ink" href="mailto:sadamhakiki0@gmail.com?subject=Lamaran%20posisi%20IT"><span class="font-mono text-[11px] font-medium uppercase tracking-[.06em] text-muted">Surel</span>sadamhakiki0@gmail.com</a></li>
+        <li><a class="inline-flex items-baseline gap-2.5 border-b-2 border-transparent py-1 text-[clamp(17px,2.2vw,20px)] tracking-[-.01em] no-underline hover:border-ink" href="tel:+6287883351852"><span class="font-mono text-[11px] font-medium uppercase tracking-[.06em] text-muted">Telepon</span>+62 878 8335 1852</a></li>
+        <li><a class="inline-flex items-baseline gap-2.5 border-b-2 border-transparent py-1 text-[clamp(17px,2.2vw,20px)] tracking-[-.01em] no-underline hover:border-ink" href="https://wa.me/6287883351852"><span class="font-mono text-[11px] font-medium uppercase tracking-[.06em] text-muted">WhatsApp</span>+62 878 8335 1852</a></li>
+      </ul>
+    </div>
+    <div class="px-ramp mt-[clamp(48px,7vw,80px)] h-[clamp(56px,9vw,96px)]" aria-hidden="true"></div>
+  </section>
+</main>
+
+<footer class="pb-10 pt-0">
+  <div class="mx-auto flex max-w-[1120px] flex-wrap justify-between gap-x-6 gap-y-3 px-[clamp(16px,5vw,40px)] font-mono text-xs/relaxed font-medium text-muted">
+    <span>&copy; <span id="yr">2026</span> Sadam Muhammad Hakiki</span>
+    <a href="en.html" hreflang="en" lang="en" class="underline-offset-4 hover:underline">English version</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var S = localStorage, KEYS = ['tema','theme'];
+  function get(k){ try{ return S.getItem(k) }catch(e){ return null } }
+  function set(k, v){ for (var i=0;i<KEYS.length;i++){ try{ S.setItem(KEYS[i], v) }catch(e){} } }
+  var btn = document.querySelector('.theme'), root = document.documentElement;
+  function sync(){
+    var on = root.dataset.theme === 'dark';
+    var text = (document.documentElement.lang === 'en') ? ('Dark: ' + (on ? 'on' : 'off')) : ('Gelap: ' + (on ? 'nyala' : 'mati'));
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.setAttribute('aria-label', text);
+    btn.title = text;
+  }
+  btn.addEventListener('click', function(){
+    var on = root.dataset.theme !== 'dark';
+    if (on) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+    set('tema', on ? 'gelap' : 'terang');
+    sync();
+  });
+  addEventListener('storage', function(e){
+    if (KEYS.indexOf(e.key) < 0) return;
+    if (e.newValue === 'gelap' || e.newValue === 'dark') root.dataset.theme = 'dark';
+    else delete root.dataset.theme;
+    sync();
+  });
+  sync();
+  var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
+  for (var i=0;i<links.length;i++) links[i].addEventListener('click', function(){ menu.open = false; });
+})();
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
