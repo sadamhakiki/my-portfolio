@@ -113,17 +113,23 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 
 <main id="atas" tabindex="-1" class="focus:outline-none">
 
-  <section class="pb-0 pt-[clamp(36px,6vw,72px)]" aria-labelledby="hero-h">
-    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
+    <section class="relative overflow-x-clip pb-0 pt-[clamp(36px,6vw,72px)]" aria-labelledby="hero-h">
+    <div class="relative mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
       <p class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs font-medium uppercase tracking-[.05em] text-muted">
         <span>Depok, Jawa Barat</span><span>Terbuka untuk posisi IT</span><span>Bisa mulai segera</span>
       </p>
-      <h1 id="hero-h" class="mt-3.5 text-balance font-display text-[clamp(40px,6.6vw,78px)]/none font-semibold tracking-[-.045em]">Sadam Muhammad Hakiki</h1>
-      <p class="mt-2.5 font-display text-[clamp(19px,2.6vw,26px)]/tight font-medium tracking-[-.015em]">Teknisi dukungan IT untuk perangkat kantor dan jaringan lokal.</p>
-      <p class="mt-4.5 max-w-[60ch] text-[clamp(16px,1.9vw,18px)] text-muted">Lulusan Teknik Komputer dan Jaringan dari SMK Nasional Depok. Saya terbiasa menangani pemasangan ulang Windows, gangguan koneksi kantor, printer yang tidak terdeteksi, dan pemasangan perangkat keras. Saya mencari posisi tetap di bidang IT supaya bisa terus menangani masalah teknis sehari-hari sekaligus belajar dari tim yang lebih berpengalaman.</p>
-      <div class="mt-7 flex flex-wrap gap-3">
-        <a class="motion inline-flex items-center gap-2 rounded-[15px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-on-ink no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover" href="mailto:sadamhakiki0@gmail.com?subject=Lamaran%20posisi%20IT">Hubungi lewat surel</a>
-        <a class="motion inline-flex items-center gap-2 rounded-[15px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90" href="tel:+6287883351852">Telepon +62 878 8335 1852</a>
+      <h1 id="hero-h" class="mt-3.5 text-balance font-display text-[clamp(48px,7.4vw,96px)]/[.9] font-normal tracking-[-.01em]">Sadam<br>Muhammad<br>Hakiki</h1>
+      <p class="mt-2.5 max-w-[44ch] font-display text-[clamp(21px,2.8vw,28px)]/[1.25] font-normal tracking-[-.005em]">Teknisi dukungan IT untuk perangkat kantor dan jaringan lokal.</p>
+      <!-- the cutout sits behind the name on desktop, as its own band above on narrow screens -->
+      <figure class="pointer-events-none m-0 mt-6 grid w-full justify-items-start max-md:order-first md:absolute md:right-0 md:top-0 md:mt-0 md:block md:w-[clamp(220px,33vw,360px)]">
+        <img class="block h-auto w-[min(62%,280px)] md:w-full" src="foto-cutout.png" width="721" height="932" alt="Potret Sadam Muhammad Hakiki" fetchpriority="high" decoding="async">
+      </figure>
+      <div class="mt-[clamp(32px,5vw,52px)] flex max-w-[56ch] flex-col gap-6">
+        <p class="m-0 text-[clamp(16px,1.9vw,18px)] text-muted">Lulusan Teknik Komputer dan Jaringan dari SMK Nasional Depok. Saya terbiasa menangani pemasangan ulang Windows, gangguan koneksi kantor, printer yang tidak terdeteksi, dan pemasangan perangkat keras. Saya mencari posisi tetap di bidang IT supaya bisa terus menangani masalah teknis sehari-hari sekaligus belajar dari tim yang lebih berpengalaman.</p>
+        <div class="flex flex-wrap gap-3">
+          <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-on-ink no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover" href="mailto:sadamhakiki0@gmail.com?subject=Lamaran%20posisi%20IT">Hubungi lewat surel</a>
+          <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90" href="tel:+6287883351852">Telepon +62 878 8335 1852</a>
+        </div>
       </div>
     </div>
     <div class="px-ramp mt-[clamp(32px,5vw,56px)] h-[clamp(56px,9vw,104px)]" aria-hidden="true"></div>
