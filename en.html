@@ -246,19 +246,19 @@
         <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">A record of projects I worked on during my years in IT support.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-[4px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-1">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Network and Server</p>
           <h3 id="case-1" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Company network infrastructure</h3>
           <p class="mt-2 text-[15px]/[1.6] text-body/70">Managed switches, VLANs, inter-VLAN routing, routers, and firewalls with access rules between segments. Includes a Stalwart mail server with Bulwark, NAS storage, and UPS units for critical hardware.</p>
         </article>
-        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-2">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Security and Communication</p>
           <h3 id="case-2" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">IP PBX, CCTV, and access control</h3>
           <p class="mt-2 text-[15px]/[1.6] text-body/70">Implemented and managed the IP PBX system, installed and configured CCTV and Hikvision access control, including user data and access rights.</p>
         </article>
-        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-3">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-3">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Web Development</p>
           <h3 id="case-3" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Company and foundation websites</h3>
@@ -301,6 +301,7 @@
 var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
 for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function(){ menu.open = false; });
 document.getElementById('yr').textContent = new Date().getFullYear();
+syncToTop();
 </script>
 
 </body>

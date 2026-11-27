@@ -242,19 +242,19 @@
         <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Dokumentasi beberapa proyek yang saya kerjakan selama bekerja di bidang IT support.</p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-[4px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-1">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Jaringan dan Server</p>
           <h3 id="case-1" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Infrastruktur jaringan perusahaan</h3>
           <p class="mt-2 text-[15px]/[1.6] text-body/70">Managed switch, VLAN, inter-VLAN routing, router, dengan aturan akses antar segmen. Termasuk mail server Stalwart dengan Bulwark, penyimpanan NAS, dan UPS untuk perangkat kritikal.</p>
         </article>
-        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-2">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Keamanan dan Komunikasi</p>
           <h3 id="case-2" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">IP PBX, CCTV, dan access control</h3>
           <p class="mt-2 text-[15px]/[1.6] text-body/70">Implementasi dan pengelolaan sistem IP PBX, pemasangan dan konfigurasi CCTV serta access control Hikvision, termasuk data pengguna dan hak akses.</p>
         </article>
-        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-3">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)] transition-colors duration-150 hover:border-ink motion-reduce:transition-none" aria-labelledby="case-3">
           <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
           <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Pengembangan Web</p>
           <h3 id="case-3" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Website perusahaan dan yayasan</h3>
@@ -297,6 +297,7 @@
 var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
 for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function(){ menu.open = false; });
 document.getElementById('yr').textContent = new Date().getFullYear();
+syncToTop();
 </script>
 
 </body>

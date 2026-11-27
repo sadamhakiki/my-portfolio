@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <clipPath id="tile"><circle cx="32" cy="32" r="32"/></clipPath>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45) scale(1.4142)">
+      <rect width="4" height="8" fill="#F2F2F2"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#tile)">
+    <rect width="64" height="64" fill="#0B0B0B"/>
+    <rect width="64" height="64" fill="url(#hatch)"/>
+  </g>
+</svg>
