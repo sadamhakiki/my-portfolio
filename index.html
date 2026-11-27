@@ -47,11 +47,11 @@
     background-size: 6px 6px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6L6 0' stroke='currentColor' stroke-width='1.5'/%3E%3C/svg%3E");
   }
-  /* the page ground: the same 6px grid sampled down to a dot, so empty
-     stretches read as paper rather than void. Kept near the page colour. */
+  /* the page ground: a 2px dot on a 24px grid, centred in the tile so it never clips. */
   @utility px-grid {
+    background-position: 50% 50%;
     background-size: 24px 24px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='.5' cy='.5' r='.5' fill='%232A2A2A'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='1' fill='%232A2A2A'/%3E%3C/svg%3E");
   }
   @media (prefers-reduced-motion: reduce) {
     html{scroll-behavior:auto}
@@ -59,9 +59,9 @@
   }
 </style>
 </head>
-<body class="bg-page font-sans text-[17.5px]/[1.6] text-body antialiased">
+<body class="font-sans text-[17.5px]/[1.6] text-body antialiased">
 
-<header class="relative sticky top-0 z-10 border-b border-line bg-page px-grid">
+<header class="relative sticky top-0 z-10 border-b border-line bg-page">
   <div class="mx-auto flex min-h-15 max-w-[1120px] items-center justify-between gap-5 px-[clamp(16px,5vw,40px)]">
     <a href="#atas" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-[22px]/none font-normal tracking-[-.005em] no-underline">
       <span class="px-hatch size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
@@ -122,7 +122,7 @@
 
           <div class="mt-[clamp(22px,3vw,32px)] flex flex-wrap gap-3">
             <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-page no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="https://wa.me/6287883351852">Hubungi lewat WhatsApp</a>
-            <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="cv_sadammhakiki.pdf" download="CV_Sadam_Muhammad_Hakiki.pdf">Unduh CV</a>
+            <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="cv_sadammhakiki.pdf" target="_blank" rel="noopener">Lihat CV</a>
           </div>
         </div>
 
@@ -286,7 +286,7 @@
     <div class="px-band mt-[clamp(48px,7vw,80px)] h-[clamp(56px,9vw,96px)]" aria-hidden="true"></div>
   </section>
 </main>
-<footer class="pt-[clamp(24px,3vw,32px)] pb-10">
+<footer class="bg-page pt-[clamp(24px,3vw,32px)] pb-10">
   <div class="mx-auto flex max-w-[1120px] flex-wrap justify-between gap-x-6 gap-y-3 px-[clamp(16px,5vw,40px)] font-mono text-xs/relaxed font-medium text-muted">
     <span>&copy; <span id="yr">2026</span> Sadam Muhammad Hakiki</span>
     <a href="en.html" hreflang="en" lang="en" class="underline-offset-4 hover:underline">English version</a>

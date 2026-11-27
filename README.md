@@ -9,7 +9,7 @@ Satu halaman portfolio untuk IT Support: Pengalaman, Keahlian, Proyek, dan Konta
 | `index.html` | Versi Indonesia. Dibuka langsung di browser. |
 | `en.html` | Versi Inggris, struktur sama. |
 | `foto-cutout.png` | Potret di hero. Latar transparan, dipotong di dada. |
-| `cv_sadammhakiki.pdf` | File yang diunduh lewat tombol "Unduh CV". |
+| `cv_sadammhakiki.pdf` | File yang dibuka di tab baru lewat tombol "Lihat CV". |
 | `DESIGN.md` | Catatan desain: token warna, tipografi, motif, dan guardrail. |
 
 ## Menjalankan
@@ -35,7 +35,7 @@ Halaman memakai satu tema gelap saja. Warna, font, dan motif halftone didefinisi
 - Ganti teks di kedua file. Kalau hanya mengubah satu, versi Indonesia dan Inggris jadi tidak sinkron.
 - Tanggal di footer diisi otomatis dari tahun berjalan.
 - Mengganti foto: timpa `foto-cutout.png`, lalu sesuaikan atribut `width` dan `height` di tag `<img>` supaya tidak ada pergeseran tata letak saat gambar dimuat.
-- Mengganti CV: timpa `cv_sadammhakiki.pdf`. Nama unduhan sudah diatur lewat atribut `download`, jadi nama file aslinya tidak berpengaruh.
+- Mengganti CV: timpa `cv_sadammhakiki.pdf`. Tombol "Lihat CV" membukanya di tab baru (`target="_blank"`), jadi nama file aslinya yang tampil di tab. Nama `cv_sadammhakiki.pdf` juga muncul di bilah alamat; samakan di kedua HTML kalau diubah.
 
 ## Deploy
 
