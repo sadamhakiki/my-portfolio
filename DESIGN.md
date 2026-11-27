@@ -13,20 +13,32 @@ colors:
   border: "#D4D4D4"
 typography:
   display-lg:
-    fontFamily: "Inter"
-    fontSize: "64px"
-    fontWeight: 500
-    lineHeight: "1.04"
-    letterSpacing: "0"
-  body-md:
-    fontFamily: "Inter"
-    fontSize: "16px"
+    fontFamily: "Instrument Serif"
+    fontSize: "84px"
     fontWeight: 400
-    lineHeight: "1.6"
+    lineHeight: "0.98"
+    letterSpacing: "-0.01em"
+  display-md:
+    fontFamily: "Instrument Serif"
+    fontSize: "46px"
+    fontWeight: 400
+    lineHeight: "1.03"
+    letterSpacing: "-0.01em"
+  heading-sm:
+    fontFamily: "Instrument Serif"
+    fontSize: "22px"
+    fontWeight: 400
+    lineHeight: "1.2"
+    letterSpacing: "-0.005em"
+  body-md:
+    fontFamily: "Plus Jakarta Sans"
+    fontSize: "16.5px"
+    fontWeight: 400
+    lineHeight: "1.65"
   label-md:
-    fontFamily: "JetBrains Mono"
+    fontFamily: "IBM Plex Mono"
     fontSize: "12px"
-    fontWeight: 600
+    fontWeight: 500
     lineHeight: "1.2"
 spacing:
   base: "8px"
@@ -34,8 +46,8 @@ spacing:
   card-padding: "24px"
   section-padding: "80px"
 rounded:
-  card: "15px"
-  control: "15px"
+  card: "4px"
+  control: "4px"
   pill: "9999px"
 components:
   card:
@@ -43,7 +55,7 @@ components:
     radius: "Match the declared card radius token"
   button:
     background: "Use primary or accent colors for the main action"
-    radius: "Use the control or pill radius based on the source HTML"
+    radius: "Use the control radius for buttons and case cards; only the theme switch keeps the pill"
 ---
 # DitherOS - Algorithmic Interfaces
 Source: Neuform Featured templates from top creators. Author: Meng To (@mengto). Views: 15; favorites: 2; remixes: 3.
@@ -58,7 +70,7 @@ Key visible headings include: Digital noise. Analog soul.; Engineered for modern
 ## Colors
 Anchor the palette in primary #FFFFFF, secondary #050505, accent #FFFFFF, background #FFFFFF, surface #D4D4D4, text-primary #111827. Keep background, surface, text, and border roles distinct so generated layouts retain the same contrast pattern as the source.
 ## Typography
-Use Inter for display moments and Inter for body copy unless the HTML clearly demands a compatible fallback. Labels and technical metadata should use JetBrains Mono or an equivalent mono face.
+Headings use Instrument Serif at weight 400 with tight, near-zero tracking: the high-contrast serif supplies the character, so heavier weights only smear it. Body copy uses Plus Jakarta Sans, whose wide apertures keep long Indonesian paragraphs readable at 16.5px. Labels and technical metadata use IBM Plex Mono at medium weight, uppercase with .05em tracking. Fall back to Fraunces, then Georgia for headings; Segoe UI for body; Consolas for labels.
 ## Layout
 Keep spacing deliberate and stable. Favor the same grid direction, max-width behavior, card density, and responsive stacking seen in the HTML. Do not replace distinctive source structures with generic SaaS sections.
 ## Components

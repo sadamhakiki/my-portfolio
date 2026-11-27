@@ -9,8 +9,8 @@
 <link rel="alternate" hreflang="id" href="index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
 /* restore the saved theme before first paint, otherwise the page flashes white */
 try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='gelap'||t==='dark')document.documentElement.dataset.theme='dark'}catch(e){}
@@ -20,9 +20,9 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 <style type="text/tailwindcss">
   /* ink is the near-black used for text, rules and the primary button; on-ink is what sits on it */
   @theme {
-    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-    --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-    --font-mono: "Space Mono", ui-monospace, Consolas, monospace;
+    --font-display: "Instrument Serif", "Fraunces", Georgia, "Times New Roman", serif;
+    --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
     --color-page: #FFFFFF;
     --color-ink: #050505;
     --color-ink-hover: #1C1C1C;
@@ -76,21 +76,21 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 
 <header class="relative sticky top-0 z-10 border-b border-line bg-page">
   <div class="mx-auto flex min-h-15 max-w-[1120px] items-center justify-between gap-5 px-[clamp(16px,5vw,40px)]">
-    <a href="#top" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-xl/none font-semibold tracking-[-.02em] no-underline">
+    <a href="#top" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-[22px]/none font-normal tracking-[-.005em] no-underline">
       <span class="px-mid size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
       Sadam M. Hakiki <small class="font-mono text-xs font-medium text-muted max-sm:hidden">Portfolio</small>
     </a>
     <div class="flex items-center gap-4">
       <nav aria-label="Main navigation" class="max-md:hidden">
-        <ul class="flex gap-[clamp(12px,2.5vw,28px)] font-mono text-[13px] font-medium">
+        <ul class="flex gap-[clamp(12px,2.5vw,28px)] text-[15px] font-semibold">
           <li><a href="#experience" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Experience</a></li>
           <li class="max-lg:hidden"><a href="#skills" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Skills</a></li>
           <li class="max-lg:hidden"><a href="#projects" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Work</a></li>
           <li><a href="#contact" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Contact</a></li>
         </ul>
       </nav>
-      <a href="index.html" hreflang="id" lang="id" aria-label="Indonesian version" class="border-b-2 border-line py-0.5 font-mono text-xs font-medium no-underline hover:border-ink max-md:hidden">ID</a>
-      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 font-mono text-xs font-medium text-muted" type="button" aria-pressed="false" aria-label="Dark: off" title="Dark: off">
+      <a href="index.html" hreflang="id" lang="id" aria-label="Indonesian version" class="border-b-2 border-line py-0.5 text-sm font-semibold no-underline hover:border-ink max-md:hidden">ID</a>
+      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 text-sm font-semibold text-muted" type="button" aria-pressed="false" aria-label="Dark: off" title="Dark: off">
         <span class="max-sm:hidden" aria-hidden="true">Light</span>
         <span class="relative h-5 w-9 shrink-0 rounded-full border border-ink bg-page" aria-hidden="true">
           <span class="motion absolute left-0.5 top-0.5 size-3.5 rounded-full bg-ink transition-transform duration-150 group-[&[aria-pressed=true]]:translate-x-4"></span>
@@ -98,13 +98,13 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
         <span class="max-sm:hidden" aria-hidden="true">Dark</span>
       </button>
       <details class="relative md:hidden">
-        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 font-mono text-xs font-medium [&::-webkit-details-marker]:hidden">Menu</summary>
-        <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 font-mono text-[13px] shadow-sm">
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#experience">Experience</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#skills">Skills</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#projects">Work</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#contact">Contact</a></li>
-          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="index.html" hreflang="id" lang="id">Versi bahasa Indonesia</a></li>
+        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden">Menu</summary>
+        <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 text-[15px] shadow-sm">
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#experience">Experience</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#skills">Skills</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#projects">Work</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#contact">Contact</a></li>
+          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="index.html" hreflang="id" lang="id">Versi bahasa Indonesia</a></li>
         </ul>
       </details>
     </div>
@@ -133,14 +133,14 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="experience-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Work experience</h2>
+        <h2 id="experience-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Work experience</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Three years with user devices and office networks, from an internship to a technical support role.</p>
       </div>
       <ol class="border-t border-ink">
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
           <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2024 &ndash; present</span>
           <div>
-            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Technical support staff</h3>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Technical support staff</h3>
             <p class="mt-0.5">PT Mitra Teknologi Nusantara <span class="text-muted">&middot; Depok</span></p>
             <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
               <li>First point of contact for device complaints from 40 office users by ticket and phone.</li>
@@ -152,7 +152,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
           <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2023 &ndash; 2024</span>
           <div>
-            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Technician intern</h3>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Technician intern</h3>
             <p class="mt-0.5">CV Data Prima <span class="text-muted">&middot; South Jakarta</span></p>
             <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
               <li>Diagnosing and cleaning staff laptops that overheated and got loud, then replacing thermal paste with a senior technician.</li>
@@ -169,7 +169,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-mid mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="skills-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Skills and education</h2>
+        <h2 id="skills-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Skills and education</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">What I work with every day, not a list of everything I have read about.</p>
       </div>
       <div class="grid gap-8 md:grid-cols-3 md:gap-[clamp(24px,4vw,48px)]">
@@ -205,13 +205,13 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-heavy mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="projects-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Two cases I bring up most in interviews.</h2>
+        <h2 id="projects-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Two cases I bring up most in interviews.</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Kept short: what went wrong, what I did, and how it ended.</p>
       </div>
       <div class="grid items-start gap-6 lg:grid-cols-[1.1fr_1fr]">
-        <article class="rounded-[15px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
+        <article class="rounded-[4px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
           <div class="px-heavy h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">Office Wi-Fi that kept resetting itself</h3>
+          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">Office Wi-Fi that kept resetting itself</h3>
           <p class="mt-2 text-[15px] text-muted">The workspace connection dropped every lunch hour because the old router kept resetting its own IP.</p>
           <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
             <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">What I did</dt>
@@ -220,9 +220,9 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
             <dd class="m-0">Stable for two weeks of monitoring, with no drop reports during peak hours.</dd>
           </dl>
         </article>
-        <article class="rounded-[15px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
           <div class="px-mid h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">A user laptop that would not power on</h3>
+          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">A user laptop that would not power on</h3>
           <p class="mt-2 text-[15px] text-muted">The laptop died after a system update, with documents inside that had never been backed up.</p>
           <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
             <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">What I did</dt>
@@ -239,7 +239,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="contact-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Interested in hiring me?</h2>
+        <h2 id="contact-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Interested in hiring me?</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">I answer email on weekdays. For anything urgent, a call is quicker.</p>
       </div>
       <ul class="flex list-none flex-wrap gap-x-8 gap-y-3 p-0">

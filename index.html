@@ -9,8 +9,8 @@
 <link rel="alternate" hreflang="en" href="en.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
 /* restore the saved theme before first paint, otherwise the page flashes white */
 try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='gelap'||t==='dark')document.documentElement.dataset.theme='dark'}catch(e){}
@@ -20,9 +20,9 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 <style type="text/tailwindcss">
   /* ink is the near-black used for text, rules and the primary button; on-ink is what sits on it */
   @theme {
-    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-    --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-    --font-mono: "Space Mono", ui-monospace, Consolas, monospace;
+    --font-display: "Instrument Serif", "Fraunces", Georgia, "Times New Roman", serif;
+    --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
     --color-page: #FFFFFF;
     --color-ink: #050505;
     --color-ink-hover: #1C1C1C;
@@ -76,21 +76,21 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 
 <header class="relative sticky top-0 z-10 border-b border-line bg-page">
   <div class="mx-auto flex min-h-15 max-w-[1120px] items-center justify-between gap-5 px-[clamp(16px,5vw,40px)]">
-    <a href="#atas" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-xl/none font-semibold tracking-[-.02em] no-underline">
+    <a href="#atas" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-[22px]/none font-normal tracking-[-.005em] no-underline">
       <span class="px-mid size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
       Sadam M. Hakiki <small class="font-mono text-xs font-medium text-muted max-sm:hidden">Portfolio</small>
     </a>
     <div class="flex items-center gap-4">
       <nav aria-label="Navigasi utama" class="max-md:hidden">
-        <ul class="flex gap-[clamp(12px,2.5vw,28px)] font-mono text-[13px] font-medium">
+        <ul class="flex gap-[clamp(12px,2.5vw,28px)] text-[15px] font-semibold">
           <li><a href="#pengalaman" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Pengalaman</a></li>
           <li class="max-lg:hidden"><a href="#keahlian" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Keahlian</a></li>
           <li class="max-lg:hidden"><a href="#proyek" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Proyek</a></li>
           <li><a href="#kontak" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Kontak</a></li>
         </ul>
       </nav>
-      <a href="en.html" hreflang="en" lang="en" aria-label="Versi bahasa Inggris" class="border-b-2 border-line py-0.5 font-mono text-xs font-medium no-underline hover:border-ink max-md:hidden">EN</a>
-      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 font-mono text-xs font-medium text-muted" type="button" aria-pressed="false" aria-label="Gelap: mati" title="Gelap: mati">
+      <a href="en.html" hreflang="en" lang="en" aria-label="Versi bahasa Inggris" class="border-b-2 border-line py-0.5 text-sm font-semibold no-underline hover:border-ink max-md:hidden">EN</a>
+      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 text-sm font-semibold text-muted" type="button" aria-pressed="false" aria-label="Gelap: mati" title="Gelap: mati">
         <span class="max-sm:hidden" aria-hidden="true">Terang</span>
         <span class="relative h-5 w-9 shrink-0 rounded-full border border-ink bg-page" aria-hidden="true">
           <span class="motion absolute left-0.5 top-0.5 size-3.5 rounded-full bg-ink transition-transform duration-150 group-[&[aria-pressed=true]]:translate-x-4"></span>
@@ -98,13 +98,13 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
         <span class="max-sm:hidden" aria-hidden="true">Gelap</span>
       </button>
       <details class="relative md:hidden">
-        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 font-mono text-xs font-medium [&::-webkit-details-marker]:hidden">Menu</summary>
-        <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 font-mono text-[13px] shadow-sm">
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#pengalaman">Pengalaman</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#keahlian">Keahlian</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#proyek">Proyek</a></li>
-          <li><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="#kontak">Kontak</a></li>
-          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 no-underline hover:bg-surface" href="en.html" hreflang="en" lang="en">English version</a></li>
+        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden">Menu</summary>
+        <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 text-[15px] shadow-sm">
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#pengalaman">Pengalaman</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#keahlian">Keahlian</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#proyek">Proyek</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#kontak">Kontak</a></li>
+          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="en.html" hreflang="en" lang="en">English version</a></li>
         </ul>
       </details>
     </div>
@@ -133,14 +133,14 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="pengalaman-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Pengalaman kerja</h2>
+        <h2 id="pengalaman-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Pengalaman kerja</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Tiga tahun menangani perangkat pengguna dan jaringan kantor, dari magang sampai staf dukungan teknis.</p>
       </div>
       <ol class="border-t border-ink">
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
           <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2024 &ndash; sekarang</span>
           <div>
-            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Staf dukungan teknis</h3>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Staf dukungan teknis</h3>
             <p class="mt-0.5">PT Mitra Teknologi Nusantara <span class="text-muted">&middot; Depok</span></p>
             <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
               <li>Menjadi titik kontak pertama untuk keluhan perangkat dari 40 pengguna kantor lewat tiket dan telepon.</li>
@@ -152,7 +152,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
           <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2023 &ndash; 2024</span>
           <div>
-            <h3 class="font-display text-[21px]/tight font-semibold tracking-[-.015em]">Teknisi magang</h3>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Teknisi magang</h3>
             <p class="mt-0.5">CV Data Prima <span class="text-muted">&middot; Jakarta Selatan</span></p>
             <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
               <li>Memeriksa dan membersihkan laptop staf yang panas dan berisik, lalu mengganti pasta termal bersama teknisi senior.</li>
@@ -169,7 +169,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-mid mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="keahlian-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Keahlian dan pendidikan</h2>
+        <h2 id="keahlian-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Keahlian dan pendidikan</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Yang saya kerjakan setiap hari, bukan daftar semua hal yang pernah saya baca.</p>
       </div>
       <div class="grid gap-8 md:grid-cols-3 md:gap-[clamp(24px,4vw,48px)]">
@@ -205,13 +205,13 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-heavy mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="proyek-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Dua kasus yang paling sering saya sebut saat wawancara.</h2>
+        <h2 id="proyek-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Dua kasus yang paling sering saya sebut saat wawancara.</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Ditulis singkat: apa masalahnya, apa yang saya lakukan, dan hasilnya.</p>
       </div>
       <div class="grid items-start gap-6 lg:grid-cols-[1.1fr_1fr]">
-        <article class="rounded-[15px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
+        <article class="rounded-[4px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
           <div class="px-heavy h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">Wi-Fi kantor titik akses acak</h3>
+          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">Wi-Fi kantor titik akses acak</h3>
           <p class="mt-2 text-[15px] text-muted">Koneksi di ruang kerja putus setiap jam makan siang karena router lama mengatur ulang IP sendiri.</p>
           <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
             <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Yang saya lakukan</dt>
@@ -220,9 +220,9 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
             <dd class="m-0">Koneksi stabil selama dua minggu pengamatan, tanpa keluhan putus selama jam sibuk.</dd>
           </dl>
         </article>
-        <article class="rounded-[15px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
           <div class="px-mid h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(21px,2.8vw,26px)]/tight font-semibold tracking-[-.02em]">Laptop pengguna yang tidak mau menyala</h3>
+          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">Laptop pengguna yang tidak mau menyala</h3>
           <p class="mt-2 text-[15px] text-muted">Laptop mati setelah pembaruan sistem, padahal di dalamnya ada dokumen yang belum dicadangkan.</p>
           <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
             <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Yang saya lakukan</dt>
@@ -239,7 +239,7 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     <div class="mx-auto max-w-[1120px]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
         <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="kontak-h" class="max-w-[22ch] font-display text-[clamp(28px,4.4vw,44px)]/tight font-semibold tracking-[-.03em] lg:col-start-1">Tertarik mengajak saya bergabung?</h2>
+        <h2 id="kontak-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Tertarik mengajak saya bergabung?</h2>
         <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Saya membalas surel di hari kerja. Untuk urusan cepat, telepon langsung lebih baik.</p>
       </div>
       <ul class="flex list-none flex-wrap gap-x-8 gap-y-3 p-0">
