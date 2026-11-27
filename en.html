@@ -1,39 +1,24 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth scroll-pt-[60px] bg-page px-grid">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sadam Muhammad Hakiki | IT Support Technician</title>
-<meta name="description" content="Portfolio of Sadam Muhammad Hakiki, an IT support technician in Depok. Computer and Network Engineering graduate of SMK Nasional Depok, available for IT roles.">
-<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Portfolio of Sadam Muhammad Hakiki, IT Support in Depok with a Computer and Network Engineering (TKJ) background: networks, hardware and software troubleshooting, and IT system maintenance.">
+<meta name="theme-color" content="#0B0B0B">
 <link rel="alternate" hreflang="id" href="index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script>
-/* restore the saved theme before first paint, otherwise the page flashes white */
-try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='gelap'||t==='dark')document.documentElement.dataset.theme='dark'}catch(e){}
-</script>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <script>document.addEventListener("DOMContentLoaded",function(){document.documentElement.dataset.tw="on"})</script>
 <style type="text/tailwindcss">
   /* ink is the near-black used for text, rules and the primary button; on-ink is what sits on it */
   @theme {
-    --font-display: "Instrument Serif", "Fraunces", Georgia, "Times New Roman", serif;
-    --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
-    --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-    --color-page: #FFFFFF;
-    --color-ink: #050505;
-    --color-ink-hover: #1C1C1C;
-    --color-on-ink: #FFFFFF;
-    --color-body: #111827;
-    --color-muted: #4B5563;
-    --color-line: #D4D4D4;
-    --color-surface: #F4F4F4;
-  }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "Space Mono", ui-monospace, Consolas, monospace;
     --color-page: #0B0B0B;
     --color-ink: #F2F2F2;
     --color-ink-hover: #D9D9D9;
@@ -43,26 +28,30 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     --color-line: #2A2A2A;
     --color-surface: #141414;
   }
-  /* patterns paint with currentColor, so each icon takes the colour of its parent */
-  @utility px-heavy {
-    background-size: 8px 8px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='currentColor'/%3E%3Cpath d='M0 0h6v2H0zM0 2h2v2H0zM4 2h2v2H4zM0 4h2v2H0zM4 4h2v2H4zM0 6h2v2H0zM4 6h2v2H4z' fill='%23fff'/%3E%3C/svg%3E");
+  /* the one theme is dark; without this the form controls and scrollbars stay light */
+  :root { color-scheme: dark; }
+  /* one motif: a 45 degree hatch on a 6px grid; denser means heavier */
+  @utility px-hatch {
+    background-size: 6px 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6L6 0' stroke='currentColor' stroke-width='1.5'/%3E%3C/svg%3E");
   }
-  @utility px-dense {
-    background-size: 8px 8px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v2H0zm2 0h2v2H2zm4 0h2v2H4zm6 0h2v2H6zM0 2h2v2H0zm2 2h2v2H2zm2 0h2v2H4zm4 0h2v2H6zM0 4h2v2H0zm2 0h2v2H2zm4 0h2v2H4zm6 0h2v2H6zM2 6h2v2H2zm4 0h2v2H4z' fill='currentColor'/%3E%3C/svg%3E");
+  @utility px-ticks {
+    background-size: 24px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M0 0h7M0 0v7M24 24h-7M24 24v-7' fill='none' stroke='currentColor' stroke-width='1'/%3E%3C/svg%3E");
   }
-  @utility px-mid {
-    background-size: 8px 8px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h2v2H0zm4 0h2v2H4zM2 2h2v2H2zm4 2h2v2H4zM0 4h2v2H0zm4 0h2v2H4zM6 4h2v2H6zM2 6h2v2H2zm4 0h2v2H4z' fill='currentColor'/%3E%3C/svg%3E");
+  @utility px-band {
+    background-size: 6px 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6L6 0' stroke='%23F2F2F2' stroke-width='1.5'/%3E%3C/svg%3E");
   }
-  /* the band that closes the hero: a 16px tile of stripes, each stripe running the muted to ink gradient */
-  @utility px-ramp {
-    background-size: 16px 16px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%234B5563'/%3E%3Cstop offset='1' stop-color='%23050505'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='16' height='4' fill='url(%23g)'/%3E%3Crect y='6' width='16' height='4' fill='url(%23g)'/%3E%3Crect y='12' width='16' height='2' fill='url(%23g)'/%3E%3C/svg%3E");
+  @utility px-hatch-card {
+    background-size: 6px 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 6L6 0' stroke='currentColor' stroke-width='1.5'/%3E%3C/svg%3E");
   }
-  :root[data-theme="dark"] .px-ramp {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%239CA3AF'/%3E%3Cstop offset='1' stop-color='%23F2F2F2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='16' height='4' fill='url(%23g)'/%3E%3Crect y='6' width='16' height='4' fill='url(%23g)'/%3E%3Crect y='12' width='16' height='2' fill='url(%23g)'/%3E%3C/svg%3E");
+  /* the page ground: the same 6px grid sampled down to a dot, so empty
+     stretches read as paper rather than void. Kept near the page colour. */
+  @utility px-grid {
+    background-size: 24px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='.5' cy='.5' r='.5' fill='%232A2A2A'/%3E%3C/svg%3E");
   }
   @media (prefers-reduced-motion: reduce) {
     html{scroll-behavior:auto}
@@ -70,100 +59,140 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
   }
 </style>
 </head>
-<body class="bg-page font-sans text-[16.5px]/[1.65] text-body antialiased [color-scheme:light]">
+<body class="bg-page font-sans text-[17.5px]/[1.6] text-body antialiased">
 
 <a href="#contact" class="fixed left-2 top-[-3rem] z-20 rounded-lg bg-ink px-3.5 py-2.5 text-on-ink no-underline focus:top-2">Skip to contact</a>
 
-<header class="relative sticky top-0 z-10 border-b border-line bg-page">
+<header class="relative sticky top-0 z-10 border-b border-line bg-page px-grid">
   <div class="mx-auto flex min-h-15 max-w-[1120px] items-center justify-between gap-5 px-[clamp(16px,5vw,40px)]">
     <a href="#top" class="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-[22px]/none font-normal tracking-[-.005em] no-underline">
-      <span class="px-mid size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
+      <span class="px-hatch size-[18px] shrink-0 bg-ink" aria-hidden="true"></span>
       Sadam M. Hakiki <small class="font-mono text-xs font-medium text-muted max-sm:hidden">Portfolio</small>
     </a>
     <div class="flex items-center gap-4">
       <nav aria-label="Main navigation" class="max-md:hidden">
-        <ul class="flex gap-[clamp(12px,2.5vw,28px)] text-[15px] font-semibold">
+        <ul class="flex gap-[clamp(14px,2.5vw,30px)] font-display text-[15.5px] font-medium tracking-[-.01em]">
           <li><a href="#experience" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Experience</a></li>
           <li class="max-lg:hidden"><a href="#skills" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Skills</a></li>
           <li class="max-lg:hidden"><a href="#projects" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Work</a></li>
           <li><a href="#contact" class="border-b-2 border-transparent py-1.5 no-underline hover:border-ink">Contact</a></li>
         </ul>
       </nav>
-      <a href="index.html" hreflang="id" lang="id" aria-label="Indonesian version" class="border-b-2 border-line py-0.5 text-sm font-semibold no-underline hover:border-ink max-md:hidden">ID</a>
-      <button class="theme group flex cursor-pointer items-center gap-2 border-0 bg-none py-1.5 text-sm font-semibold text-muted" type="button" aria-pressed="false" aria-label="Dark: off" title="Dark: off">
-        <span class="max-sm:hidden" aria-hidden="true">Light</span>
-        <span class="relative h-5 w-9 shrink-0 rounded-full border border-ink bg-page" aria-hidden="true">
-          <span class="motion absolute left-0.5 top-0.5 size-3.5 rounded-full bg-ink transition-transform duration-150 group-[&[aria-pressed=true]]:translate-x-4"></span>
-        </span>
-        <span class="max-sm:hidden" aria-hidden="true">Dark</span>
-      </button>
+      <a href="index.html" hreflang="id" lang="id" aria-label="Indonesian version" class="border-b-2 border-line py-0.5 font-display text-[15.5px] font-medium tracking-[-.01em] no-underline hover:border-ink max-md:hidden">ID</a>
       <details class="relative md:hidden">
-        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 text-sm font-semibold [&::-webkit-details-marker]:hidden">Menu</summary>
+        <summary class="cursor-pointer list-none rounded-lg border border-ink px-2.5 py-1.5 font-display text-[15.5px] font-medium tracking-[-.01em] [&::-webkit-details-marker]:hidden">Menu</summary>
         <ul class="absolute right-0 top-[calc(100%+6px)] min-w-44 rounded-xl border border-line bg-page p-2 text-[15px] shadow-sm">
-          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#experience">Experience</a></li>
-          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#skills">Skills</a></li>
-          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#projects">Work</a></li>
-          <li><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="#contact">Contact</a></li>
-          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 font-semibold no-underline hover:bg-surface" href="index.html" hreflang="id" lang="id">Versi bahasa Indonesia</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-display font-medium tracking-[-.01em] no-underline hover:bg-surface" href="#experience">Experience</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-display font-medium tracking-[-.01em] no-underline hover:bg-surface" href="#skills">Skills</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-display font-medium tracking-[-.01em] no-underline hover:bg-surface" href="#projects">Work</a></li>
+          <li><a class="block rounded-lg px-3 py-2 font-display font-medium tracking-[-.01em] no-underline hover:bg-surface" href="#contact">Contact</a></li>
+          <li class="mt-1 border-t border-line pt-1"><a class="block rounded-lg px-3 py-2 font-display font-medium tracking-[-.01em] no-underline hover:bg-surface" href="index.html" hreflang="id" lang="id">Versi bahasa Indonesia</a></li>
         </ul>
       </details>
     </div>
   </div>
 </header>
 
-<main id="top" tabindex="-1" class="focus:outline-none">
+<main id="top" tabindex="-1" class="focus:outline-none scroll-mt-[60px]">
 
-    <section class="relative overflow-x-clip pb-0 pt-[clamp(36px,6vw,72px)]" aria-labelledby="hero-h">
-    <div class="relative mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
-      <p class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs font-medium uppercase tracking-[.05em] text-muted">
-        <span>Depok, West Java, Indonesia</span><span>Open to IT roles</span><span>Available to start now</span>
+    <section class="relative overflow-x-clip pb-0 pt-[clamp(32px,5vw,64px)]" aria-labelledby="hero-h">
+    <div class="relative mx-auto grid max-w-[1120px] px-[clamp(16px,5vw,40px)] [grid-template-columns:minmax(0,1fr)] lg:[grid-template-columns:minmax(0,1fr)_clamp(260px,30vw,360px)]">
+
+      <!-- Availability reads as a status, not an eyebrow above the heading:
+           a live dot, then what is true, in the page's own voice. -->
+      <p class="m-0 flex flex-wrap items-center gap-x-2.5 gap-y-1.5 [grid-column:1/-1] font-mono text-[12px] font-medium uppercase tracking-[.06em] text-muted">
+        <span class="relative inline-flex size-[7px] shrink-0" aria-hidden="true">
+          <span class="absolute inset-0 rounded-full bg-ink"></span>
+          <span class="motion absolute inset-0 animate-ping rounded-full bg-ink opacity-60"></span>
+        </span>
+        Open to IT roles
+        <span aria-hidden="true" class="px-0.5 text-line max-sm:hidden">/</span>
+        <span>Depok, West Java</span>
+        <span aria-hidden="true" class="px-0.5 text-line max-sm:hidden">/</span>
+        <span>Available immediately</span>
       </p>
-      <h1 id="hero-h" class="mt-3.5 text-balance font-display text-[clamp(48px,7.4vw,96px)]/[.9] font-normal tracking-[-.01em]">Sadam<br>Muhammad<br>Hakiki</h1>
-      <p class="mt-2.5 max-w-[44ch] font-display text-[clamp(21px,2.8vw,28px)]/[1.25] font-normal tracking-[-.005em]">IT support technician for office hardware and local networks.</p>
-      <!-- the cutout sits behind the name on desktop, as its own band above on narrow screens -->
-      <figure class="pointer-events-none m-0 mt-6 grid w-full justify-items-start max-md:order-first md:absolute md:right-0 md:top-0 md:mt-0 md:block md:w-[clamp(220px,33vw,360px)]">
-        <img class="block h-auto w-[min(62%,280px)] md:w-full" src="foto-cutout.png" width="721" height="932" alt="Portrait of Sadam Muhammad Hakiki" fetchpriority="high" decoding="async">
-      </figure>
-      <div class="mt-[clamp(32px,5vw,52px)] flex max-w-[56ch] flex-col gap-6">
-        <p class="m-0 text-[clamp(16px,1.9vw,18px)] text-muted">Computer and Network Engineering graduate of SMK Nasional Depok. I handle Windows reinstalls, office connectivity faults, undetected printers, and hardware installs. I am looking for a full-time IT role where I can keep solving day-to-day technical problems and learn from a more experienced team.</p>
-        <div class="flex flex-wrap gap-3">
-          <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-on-ink no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover" href="mailto:sadamhakiki0@gmail.com?subject=IT%20role%20application">Email me</a>
-          <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90" href="tel:+6287883351852">Call +62 878 8335 1852</a>
+
+      <div class="mt-[clamp(18px,2.6vw,30px)] grid items-start gap-y-[clamp(24px,4vw,40px)] [grid-column:1/-1] [grid-template-columns:subgrid]">
+
+        <!-- Left column: name, what he does, and the paragraph set at reading
+             measure so the right edge of the text block is deliberate. -->
+        <div class="min-w-0">
+          <h1 id="hero-h" class="m-0 text-balance font-display text-[clamp(42px,6vw,80px)]/[.94] font-semibold tracking-[-.035em]">Sadam<br>Muhammad<br>Hakiki</h1>
+
+          <!-- A hairline, not a box: the paragraph belongs to the heading above it. -->
+          <p class="mt-[clamp(22px,3.2vw,36px)] m-0 max-w-[62ch] border-t border-line pt-[clamp(16px,2.4vw,24px)] text-[clamp(15px,1.7vw,17px)] leading-[1.62] text-muted">IT support with a Computer and Network Engineering (TKJ) background and hands-on experience handling network infrastructure, hardware and software troubleshooting, and IT system maintenance. Analytical and solution-oriented, quick to adapt to new technology, and focused on keeping day-to-day IT operations running.</p>
+
+          <div class="mt-[clamp(22px,3vw,32px)] flex flex-wrap gap-3">
+            <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-ink px-5 py-3.25 text-[15px] font-medium text-page no-underline transition-[transform,background-color] duration-150 hover:-translate-y-px hover:bg-ink-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="https://wa.me/6287883351852">Message me on WhatsApp</a>
+            <a class="motion inline-flex items-center gap-2 rounded-[4px] border border-ink bg-page px-5 py-3.25 text-[15px] font-medium text-ink no-underline transition-[transform,opacity] duration-150 hover:-translate-y-px hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink" href="cv_sadammhakiki.pdf" download="CV_Sadam_Muhammad_Hakiki.pdf" hreflang="id">Download CV</a>
+          </div>
         </div>
+
+        <!-- Right column: the portrait is CROPPED at the chest, so the frame the
+             image sits on is the bottom of it. The photograph rises out of an
+             ink block, and a halftone collar marks the join: one field, not a
+             photo pasted over an unrelated band. -->
+        <figure class="pointer-events-none m-0 hidden w-full justify-self-end lg:block">
+          <div class="relative overflow-hidden rounded-[18px] bg-[#0B0B0B] pb-[clamp(28px,4vw,56px)] ring-1 ring-line ring-inset">
+            <!-- the ink field the figure stands in -->
+            
+            <!-- the join: a half-tone collar that fades the photo into the field -->
+            <img class="relative z-1 mx-auto block h-auto w-full select-none" src="foto-cutout.png" width="721" height="932" alt="Potret Sadam Muhammad Hakiki" fetchpriority="high" decoding="async">
+            <div class="pointer-events-none absolute inset-x-0 bottom-0 z-2 h-[22%] bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/80 to-transparent" aria-hidden="true"></div>
+            <!-- the caption sits in the field itself, so nothing floats -->
+            <div class="absolute inset-x-0 bottom-0 z-3 flex items-end justify-between gap-3 px-5 pb-4 pt-10 font-mono text-[11px] font-medium uppercase tracking-[.08em] text-white/60">
+              <span>Sadam M. Hakiki</span>
+              <span>Depok 2026</span>
+            </div>
+          </div>
+        </figure>
       </div>
     </div>
-    <div class="px-ramp mt-[clamp(32px,5vw,56px)] h-[clamp(56px,9vw,104px)]" aria-hidden="true"></div>
+
+    <!-- The closing band: the page's halftone motif at its heaviest, stepping
+         from muted to ink so the hero resolves instead of ending. -->
+    <div class="px-band mt-[clamp(32px,5vw,64px)] h-[clamp(64px,7vw,88px)]" aria-hidden="true"></div>
   </section>
 
-  <section id="experience" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)] pt-[clamp(40px,6vw,72px)]" aria-labelledby="experience-h">
-    <div class="mx-auto max-w-[1120px]">
+  <section id="experience" class="pb-[clamp(64px,10vw,112px)] pt-[clamp(40px,6vw,72px)]" aria-labelledby="experience-h">
+    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
-        <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="experience-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Work experience</h2>
-        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Three years with user devices and office networks, from an internship to a technical support role.</p>
+        <span class="px-hatch mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="experience-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Experience</h2>
+        <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">From user support and printer maintenance to networks, servers, CCTV, and internal websites.</p>
       </div>
       <ol class="border-t border-ink">
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
-          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2024 &ndash; present</span>
+          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">Nov 2025 &ndash; present</span>
           <div>
-            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Technical support staff</h3>
-            <p class="mt-0.5">PT Mitra Teknologi Nusantara <span class="text-muted">&middot; Depok</span></p>
-            <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
-              <li>First point of contact for device complaints from 40 office users by ticket and phone.</li>
-              <li>Reinstalling Windows and copying user data beforehand, with a check that everything is in place afterwards.</li>
-              <li>Walking new staff through laptop setup, email accounts, and network printer access.</li>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">IT Support</h3>
+            <p class="mt-0.5">PT Toyib Karya Utama</p>
+            <ul class="mt-2.5 list-disc space-y-1.5 pl-4.5 text-[15px] text-muted">
+              <li>Configured and managed the network infrastructure: managed switches, VLANs, inter-VLAN routing, routers, and firewalls along with their access rules between segments.</li>
+              <li>Deployed the mail server on Stalwart with Bulwark as the client application for company email.</li>
+              <li>Coordinated with vendors on the development of the company's internal ERP system.</li>
+              <li>Implemented and managed the IP PBX system, and installed and configured Hikvision access control and CCTV, including user data and access rights.</li>
+              <li>Managed storage on NAS and installed UPS units to keep critical hardware running.</li>
+              <li>Rebuilt the company website from scratch with Laravel, Livewire, and Tailwind CSS, covering design, development, and deployment to a VPS.</li>
+              <li>Built the company landing page for marketing and promotion.</li>
+              <li>Built a website for the company cafe in HTML and Tailwind CSS, deployed to a VPS over remote SSH.</li>
+              <li>Built adhan automation with Home Assistant and Music Assistant and remote control.</li>
+              <li>Troubleshot PCs, printers, and the network, covering both hardware and software problems.</li>
             </ul>
           </div>
         </li>
         <li class="grid gap-x-7 gap-y-1 border-b border-line py-6 md:grid-cols-[200px_minmax(0,1fr)]">
-          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">2023 &ndash; 2024</span>
+          <span class="pt-1 font-mono text-xs/relaxed font-medium uppercase tracking-[.05em] text-muted">Nov 2022 &ndash; Oct 2025</span>
           <div>
-            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">Technician intern</h3>
-            <p class="mt-0.5">CV Data Prima <span class="text-muted">&middot; South Jakarta</span></p>
-            <ul class="mt-2.5 list-disc space-y-1 pl-4.5 text-[15px] text-muted">
-              <li>Diagnosing and cleaning staff laptops that overheated and got loud, then replacing thermal paste with a senior technician.</li>
-              <li>Installing additional SSDs and RAM, and confirming the system detects the new parts correctly.</li>
-              <li>Helping configure the router and access points for a workspace with 12 computers.</li>
+            <h3 class="font-display text-[22px]/[1.2] font-normal tracking-[-.005em]">IT Support</h3>
+            <p class="mt-0.5">Yayasan Baitul Yataama Fadlan</p>
+            <ul class="mt-2.5 list-disc space-y-1.5 pl-4.5 text-[15px] text-muted">
+              <li>Troubleshot computers, covering hardware and software problems so users could keep working without interruption.</li>
+              <li>Handled printer faults and routine printer maintenance.</li>
+              <li>Resolved WiFi issues to keep connectivity stable.</li>
+              <li>Configured and troubleshot switching on the network.</li>
+              <li>Gave hands-on technical support to users, resolved quickly and correctly.</li>
+              <li>Built the foundation's website with Laravel and Tailwind CSS, and integrated the Midtrans payment gateway for its online donation system.</li>
             </ul>
           </div>
         </li>
@@ -171,82 +200,86 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
     </div>
   </section>
 
-  <section id="skills" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)]" aria-labelledby="skills-h">
-    <div class="mx-auto max-w-[1120px]">
+  <section id="skills" class="pb-[clamp(64px,10vw,112px)] pt-[clamp(40px,6vw,72px)]" aria-labelledby="skills-h">
+    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
-        <span class="px-mid mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="skills-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Skills and education</h2>
-        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">What I work with every day, not a list of everything I have read about.</p>
+        <span class="px-hatch mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <h2 id="skills-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Skills</h2>
+        <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Networks, security devices, and the user support I handle every day at work.</p>
       </div>
-      <div class="grid gap-8 md:grid-cols-3 md:gap-[clamp(24px,4vw,48px)]">
-        <div>
-          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Systems and hardware</h3>
-          <ul class="grid list-none gap-2.5 p-0 text-[15px]">
-            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Windows 10 and 11, reinstall and recovery</li>
-            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>SSD and RAM installs, thermal paste replacement</li>
-            <li class="flex items-start gap-2.5"><span class="px-dense mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Data backup before repairs</li>
-          </ul>
-        </div>
+      <div class="grid gap-x-[clamp(24px,4vw,48px)] gap-y-8 md:grid-cols-3">
         <div>
           <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Networking</h3>
           <ul class="grid list-none gap-2.5 p-0 text-[15px]">
-            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Router, access point, and static IP configuration</li>
-            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Fixing Wi-Fi that keeps dropping</li>
-            <li class="flex items-start gap-2.5"><span class="px-mid mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Network device and LAN cable runs</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Network configuration and management</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Network security and access rules</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Phone system implementation (IP PBX)</li>
           </ul>
         </div>
+
         <div>
-          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Education and certificates</h3>
+          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Systems and security</h3>
           <ul class="grid list-none gap-2.5 p-0 text-[15px]">
-            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>SMK Nasional Depok, Computer and Network Engineering</li>
-            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Computer assembly and maintenance certificate</li>
-            <li class="flex items-start gap-2.5"><span class="px-heavy mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Networking fundamentals certificate</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>CCTV and access control installation and configuration</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Website development</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Hardware, software, and network troubleshooting</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-3.5 border-b border-line pb-2.5 font-mono text-xs font-semibold uppercase tracking-[.06em] text-muted">Support and operations</h3>
+          <ul class="grid list-none gap-2.5 p-0 text-[15px]">
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Technical support for users</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Problem solving and independent learning</li>
+<li class="flex items-start gap-2.5"><span class="px-hatch mt-[7px] size-2 shrink-0 bg-ink" aria-hidden="true"></span>Data storage management and power protection</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="px-[clamp(16px,5vw,40px)] pb-[clamp(64px,10vw,112px)]" aria-labelledby="projects-h">
-    <div class="mx-auto max-w-[1120px]">
+  <section id="projects" class="pb-[clamp(64px,10vw,112px)] pt-[clamp(40px,6vw,72px)]" aria-labelledby="projects-h">
+    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
-        <span class="px-heavy mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
-        <h2 id="projects-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Two cases I bring up most in interviews.</h2>
-        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Kept short: what went wrong, what I did, and how it ended.</p>
+        <span class="px-ticks" aria-hidden="true"></span>
+        <h2 id="projects-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">My Projects</h2>
+        <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">A record of projects I worked on during my years in IT support.</p>
       </div>
-      <div class="grid items-start gap-6 lg:grid-cols-[1.1fr_1fr]">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <article class="rounded-[4px] border border-ink bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-1">
-          <div class="px-heavy h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-1" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">Office Wi-Fi that kept resetting itself</h3>
-          <p class="mt-2 text-[15px] text-muted">The workspace connection dropped every lunch hour because the old router kept resetting its own IP.</p>
-          <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
-            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">What I did</dt>
-            <dd class="m-0">Set one device as the DHCP server with a fixed address, then switched the access points to forward traffic instead of handing out their own leases.</dd>
-            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Result</dt>
-            <dd class="m-0">Stable for two weeks of monitoring, with no drop reports during peak hours.</dd>
-          </dl>
+          <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
+          <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Network and Server</p>
+          <h3 id="case-1" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Company network infrastructure</h3>
+          <p class="mt-2 text-[15px]/[1.6] text-body/70">Managed switches, VLANs, inter-VLAN routing, routers, and firewalls with access rules between segments. Includes a Stalwart mail server with Bulwark, NAS storage, and UPS units for critical hardware.</p>
         </article>
         <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-2">
-          <div class="px-mid h-20 w-full bg-ink" aria-hidden="true"></div>
-          <h3 id="case-2" class="mt-4.5 font-display text-[clamp(22px,2.9vw,27px)]/[1.1] font-normal tracking-[-.005em]">A user laptop that would not power on</h3>
-          <p class="mt-2 text-[15px] text-muted">The laptop died after a system update, with documents inside that had never been backed up.</p>
-          <dl class="mt-4 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-1.5 text-sm">
-            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">What I did</dt>
-            <dd class="m-0">Removed the disk, copied the data to a backup drive, and only then repaired the system boot.</dd>
-            <dt class="pt-0.75 font-mono text-[11px] font-semibold uppercase tracking-[.05em] text-muted">Result</dt>
-            <dd class="m-0">Data intact and the laptop booting normally the same day, so the user lost no files.</dd>
-          </dl>
+          <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
+          <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Security and Communication</p>
+          <h3 id="case-2" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">IP PBX, CCTV, and access control</h3>
+          <p class="mt-2 text-[15px]/[1.6] text-body/70">Implemented and managed the IP PBX system, installed and configured CCTV and Hikvision access control, including user data and access rights.</p>
+        </article>
+        <article class="rounded-[4px] border border-line bg-page p-[clamp(20px,3vw,28px)]" aria-labelledby="case-3">
+          <div class="px-hatch h-20 w-full bg-ink" aria-hidden="true"></div>
+          <p class="mt-4.5 font-mono text-[11px] font-medium uppercase tracking-[.06em] text-body/60">Web Development</p>
+          <h3 id="case-3" class="mt-1.5 font-display text-[clamp(21px,2.8vw,26px)]/[1.12] font-normal tracking-[-.005em]">Company and foundation websites</h3>
+          <p class="mt-2 text-[15px]/[1.6] text-body/70">Company and cafe websites built with Laravel, Livewire, and Tailwind CSS, deployed to a VPS. A foundation website with an online donation system and Midtrans payments.</p>
+          <ul class="mt-4 flex list-none flex-col gap-1.5 p-0 font-mono text-[13px]">
+            <li><a class="break-all underline-offset-4 hover:underline" href="https://toyibtravel.co.id" target="_blank" rel="noopener">toyibtravel.co.id</a></li>
+            <li><a class="break-all underline-offset-4 hover:underline" href="https://coffee.toyibtravel.co.id" target="_blank" rel="noopener">coffee.toyibtravel.co.id</a></li>
+            <li><a class="break-all underline-offset-4 hover:underline" href="https://baitulyataamafadlan.org" target="_blank" rel="noopener">baitulyataamafadlan.org</a></li>
+          </ul>
         </article>
       </div>
+
     </div>
   </section>
 
-  <section id="contact" class="px-[clamp(16px,5vw,40px)] pb-0" aria-labelledby="contact-h">
-    <div class="mx-auto max-w-[1120px]">
+  <section id="contact" class="pb-0" aria-labelledby="contact-h">
+    <div class="mx-auto max-w-[1120px] px-[clamp(16px,5vw,40px)]">
       <div class="mb-[clamp(24px,4vw,40px)] grid items-end gap-x-[clamp(24px,4vw,56px)] lg:grid-cols-2">
-        <span class="px-dense mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
+        <span class="px-hatch mb-3 block h-4 w-16 bg-ink" aria-hidden="true"></span>
         <h2 id="contact-h" class="max-w-[22ch] font-display text-[clamp(30px,4.6vw,46px)]/[1.03] font-normal tracking-[-.01em] lg:col-start-1">Interested in hiring me?</h2>
-        <p class="max-w-[60ch] text-muted lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">I answer email on weekdays. For anything urgent, a call is quicker.</p>
+        <p class="max-w-[60ch] text-[clamp(15px,1.7vw,17px)] leading-[1.55] text-body/70 lg:col-start-2 lg:row-start-2 lg:justify-self-end lg:text-right">Open to job opportunities, consultations, and IT support needs. Reach me through any of the contacts below.</p>
       </div>
       <ul class="flex list-none flex-wrap gap-x-8 gap-y-3 p-0">
         <li><a class="inline-flex items-baseline gap-2.5 border-b-2 border-transparent py-1 text-[clamp(17px,2.2vw,20px)] tracking-[-.01em] no-underline hover:border-ink" href="mailto:sadamhakiki0@gmail.com?subject=IT%20role%20application"><span class="font-mono text-[11px] font-medium uppercase tracking-[.06em] text-muted">Email</span>sadamhakiki0@gmail.com</a></li>
@@ -254,11 +287,10 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
         <li><a class="inline-flex items-baseline gap-2.5 border-b-2 border-transparent py-1 text-[clamp(17px,2.2vw,20px)] tracking-[-.01em] no-underline hover:border-ink" href="https://wa.me/6287883351852"><span class="font-mono text-[11px] font-medium uppercase tracking-[.06em] text-muted">WhatsApp</span>+62 878 8335 1852</a></li>
       </ul>
     </div>
-    <div class="px-ramp mt-[clamp(48px,7vw,80px)] h-[clamp(56px,9vw,96px)]" aria-hidden="true"></div>
+    <div class="px-band mt-[clamp(48px,7vw,80px)] h-[clamp(56px,9vw,96px)]" aria-hidden="true"></div>
   </section>
 </main>
-
-<footer class="pb-10 pt-0">
+<footer class="pt-[clamp(24px,3vw,32px)] pb-10">
   <div class="mx-auto flex max-w-[1120px] flex-wrap justify-between gap-x-6 gap-y-3 px-[clamp(16px,5vw,40px)] font-mono text-xs/relaxed font-medium text-muted">
     <span>&copy; <span id="yr">2026</span> Sadam Muhammad Hakiki</span>
     <a href="index.html" hreflang="id" lang="id" class="underline-offset-4 hover:underline">Versi bahasa Indonesia</a>
@@ -266,35 +298,10 @@ try{var t=localStorage.getItem('tema')||localStorage.getItem('theme');if(t==='ge
 </footer>
 
 <script>
-(function(){
-  var S = localStorage, KEYS = ['tema','theme'];
-  function get(k){ try{ return S.getItem(k) }catch(e){ return null } }
-  function set(k, v){ for (var i=0;i<KEYS.length;i++){ try{ S.setItem(KEYS[i], v) }catch(e){} } }
-  var btn = document.querySelector('.theme'), root = document.documentElement;
-  function sync(){
-    var on = root.dataset.theme === 'dark';
-    var text = (document.documentElement.lang === 'en') ? ('Dark: ' + (on ? 'on' : 'off')) : ('Gelap: ' + (on ? 'nyala' : 'mati'));
-    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-    btn.setAttribute('aria-label', text);
-    btn.title = text;
-  }
-  btn.addEventListener('click', function(){
-    var on = root.dataset.theme !== 'dark';
-    if (on) root.dataset.theme = 'dark'; else delete root.dataset.theme;
-    set('tema', on ? 'gelap' : 'terang');
-    sync();
-  });
-  addEventListener('storage', function(e){
-    if (KEYS.indexOf(e.key) < 0) return;
-    if (e.newValue === 'gelap' || e.newValue === 'dark') root.dataset.theme = 'dark';
-    else delete root.dataset.theme;
-    sync();
-  });
-  sync();
-  var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
-  for (var i=0;i<links.length;i++) links[i].addEventListener('click', function(){ menu.open = false; });
-})();
+var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
+for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function(){ menu.open = false; });
 document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
