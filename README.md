@@ -14,11 +14,12 @@ Tujuannya satu: memberi perekrut atau calon pemberi kerja gambaran cepat sebelum
 
 | Bagian | Yang ditampilkan |
 |---|---|
-| `index.html` | Versi Indonesia. Dibuka langsung di browser. |
-| `en.html` | Versi Inggris, struktur sama. |
-| `foto-cutout.png` | Potret di hero. Latar transparan, dipotong di dada. |
-| `cv_sadammhakiki.pdf` | File yang dibuka di tab baru lewat tombol "Lihat CV". |
-| `DESIGN.md` | Catatan desain: token warna, tipografi, motif, dan guardrail. |
+| Hero | Nama, potret, ringkasan singkat peran dan latar belakang, tombol WhatsApp dan Lihat CV. |
+| Pengalaman | Riwayat kerja terbaru di PT Toyib Karya Utama, dari dukungan pengguna dan perawatan printer sampai jaringan, server, CCTV, dan website internal. |
+| Keahlian | Tiga kelompok: jaringan, sistem dan keamanan, serta dukungan dan tata kelola. |
+| Proyek Saya | Tiga kasus utama: infrastruktur jaringan perusahaan, IP PBX/CCTV/access control, serta website perusahaan dan yayasan. |
+| Kontak | Email, telepon, dan WhatsApp. |
+| Footer | Tahun berjalan dan tautan ke versi bahasa lain. |
 
 Ada dua berkas halaman: `index.html` (Indonesia) dan `en.html` (Inggris). Strukturnya sama; yang berbeda hanya teks dan atribut `alt` gambar.
 

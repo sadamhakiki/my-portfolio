@@ -6,6 +6,7 @@
 <title>Sadam Muhammad Hakiki | Teknisi Dukungan IT</title>
 <meta name="description" content="Portfolio Sadam Muhammad Hakiki, IT Support di Depok dengan latar belakang Teknik Komputer dan Jaringan (TKJ): jaringan, troubleshooting hardware dan software, serta pemeliharaan sistem IT.">
 <meta name="theme-color" content="#0B0B0B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="en.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -286,6 +287,9 @@
     <div class="px-band mt-[clamp(48px,7vw,80px)] h-[clamp(56px,9vw,96px)]" aria-hidden="true"></div>
   </section>
 </main>
+<button id="to-top" class="fixed bottom-[clamp(16px,3vw,28px)] right-[clamp(16px,3vw,28px)] z-10 flex size-11 cursor-pointer items-center justify-center rounded-[4px] opacity-0 invisible border border-ink bg-page p-0 text-ink shadow-lg transition-[opacity,visibility,background-color] duration-200 ease-out hover:bg-ink hover:text-page focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink motion-reduce:transition-none" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">
+  <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 <footer class="bg-page pt-[clamp(24px,3vw,32px)] pb-10">
   <div class="mx-auto flex max-w-[1120px] flex-wrap justify-between gap-x-6 gap-y-3 px-[clamp(16px,5vw,40px)] font-mono text-xs/relaxed font-medium text-muted">
     <span>&copy; <span id="yr">2026</span> Sadam Muhammad Hakiki</span>
@@ -294,6 +298,18 @@
 </footer>
 
 <script>
+var toTop = document.getElementById('to-top');
+function syncToTop(){
+  var up = window.scrollY > innerHeight * 0.6;
+  toTop.classList.toggle('opacity-0', !up);
+  toTop.classList.toggle('invisible', !up);
+  toTop.tabIndex = up ? 0 : -1;
+}
+addEventListener('scroll', syncToTop, { passive: true });
+toTop.addEventListener('click', function(){
+  window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+});
+
 var menu = document.querySelector('header details'), links = menu.querySelectorAll('a');
 for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function(){ menu.open = false; });
 document.getElementById('yr').textContent = new Date().getFullYear();
